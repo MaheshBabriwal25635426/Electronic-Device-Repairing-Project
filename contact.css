@@ -1,0 +1,151 @@
+/* Header and Navigation */
+.header {
+    background-color: #01030e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px auto;
+    align-items: center;
+    height:4rem;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.name {
+    font-size: 25px;
+    color: white;
+
+}
+img
+{
+    width:15%;
+    height: 15%;
+    padding: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #dce37c;
+}
+
+.cta {
+    background-color: #fca311;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #4e69f0;
+}
+
+/* main contact */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.owner{
+text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-card {
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
+}
+
+.contact-card h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.contact-card p {
+    margin: 5px 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Technicians-card  */
+
+
+.Title{
+    border-radius: 2px;
+    /* text-align: left; */
+
+}
+
+.tech-name{
+    text-align: center;
+}
+.Technicians-card{
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(58, 2, 2, 0.1);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.add-technician{
+    width: 300px;
+    margin: 50px auto;
+    background-color: rgb(34, 91, 167);
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(7, 0, 0, 0.1);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    color: #070731;
+}
+
+.add-technician:hover{
+    background-color: #ddd;
+}

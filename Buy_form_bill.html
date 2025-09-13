@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .summary-box {
+            background: #fff;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .summary-box h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .summary-box p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="summary-box">
+    <h2>Order Summary</h2>
+    <p><strong>Name:</strong> <span id="summary-name"></span></p>
+    <p><strong>Device:</strong> <span id="summary-brand"></span> <span id="summary-model"></span></p>
+    <p><strong>Storage:</strong> <span id="summary-storage"></span></p>
+    <p><strong>Color:</strong> <span id="summary-color"></span></p>
+    <p><strong>Quantity:</strong> <span id="summary-quantity"></span></p>
+</div>
+
+<script>
+    document.getElementById("summary-name").textContent = sessionStorage.getItem("name");
+    document.getElementById("summary-brand").textContent = sessionStorage.getItem("brand");
+    document.getElementById("summary-model").textContent = sessionStorage.getItem("model");
+    document.getElementById("summary-storage").textContent = sessionStorage.getItem("storage");
+    document.getElementById("summary-color").textContent = sessionStorage.getItem("color");
+    document.getElementById("summary-quantity").textContent = sessionStorage.getItem("quantity");
+</script>
+
+</body>
+</html>

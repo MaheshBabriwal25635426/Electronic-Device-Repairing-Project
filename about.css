@@ -1,0 +1,214 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+/* Header and Navigation */
+.header {
+    background-color: #01030e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    height:2.8rem;
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+align-items: center;
+}
+.name {
+    font-size: 25px;
+
+}
+img
+{
+    width: 15%;
+    height: 19%;
+    padding: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #dce37c;
+}
+
+.cta {
+    background-color: #fca311;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #4e69f0;
+
+}
+
+
+
+
+
+/* Container for Layout */
+.head{
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+}
+.container {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 0px;
+    background-color: #fff;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #62adf7;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* History Section */
+.history {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.history h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.history p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Mission and Values Section */
+.mission-values {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.mission-values h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.mission-values ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.mission-values li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.services li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* 24-Hour Promise Section */
+.offer {
+    padding: 40px 20px;
+    background-color: #e9f7ff;
+    border-top: 2px solid #0073e6;
+}
+
+.offer h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.offer p {
+    font-size: 1.3em;
+    color: #0073e6;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+}

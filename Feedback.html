@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="Feedback.css">
+    <!--<script src="Feedback2.js"></script>-->
+    
+</head>
+<body>
+   <!-- Header & Navigation Menu -->
+        
+   <header class="header">
+    <div class="logo">
+      <img src="download.png" alt="">
+      <h1 class="name">ElectroFix</h1>
+
+    </div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html"> Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="Buy_product.html">Buy Now</a></li>
+            <li><a href="GetRepair.html" class="cta">Get Repair</a></li>
+            <li><a href="Admin.html">Admin</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+
+    <!-- Feedbackform -->
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm"  action="Feedback1" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="u1" required ><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="u2" required ><br>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="u3" rows="4" required ></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="savefeedbacks "  >
+            
+            <div id="feedbackDisplay" class="feedback-display">
+                <h3>Your Submitted Feedback:</h3>
+                <p id="displayName"></p>
+                <p id="displayEmail"></p>
+                <p id="displayFeedback"></p>
+        </div>
+
+        <!-- This section will display the submitted feedback below the form -->
+        <div id="feedbackDisplay" class="feedback-display">
+            <h3>Your Submitted Feedback:</h3>
+            <p id="displayName"></p>
+            <p id="displayEmail"></p>
+            <p id="displayFeedback"></p>
+
+       </div>
+    </div>
+<!--<script>
+        // Handle form submission
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault();  // Prevent form submission to server
+
+    // Get form values
+    const name=document.getElementById("name").value;
+    const email=document.getElementById("email").value;
+    const feedback= document.getElementById("feedback").value;
+
+    // Create a new feedback display element
+    const feedbackDisplay = document.createElement("div");
+    feedbackDisplay.classList.add("feedback-display");
+     feedbackDisplay.innerHTML = `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Feedback:</strong> ${feedback}</p>`;
+
+    // Append the feedback to the comments section
+    document.getElementById("commentsSection").appendChild(feedbackDisplay);
+
+    // Show the feedback display
+    feedbackDisplay.style.display = "block";
+
+    // Clear the form fields after submission
+    document.getElementById("feedbackForm").reset();
+});
+
+    </script>-->
+    <!--<script src="Feedback2.js"></script>-->
+</body>
+</html>

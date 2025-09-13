@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Electronic Device</title>
+    <link rel="stylesheet" href="Buy_form.css">
+</head>
+<body>
+
+<div class="buy-form">
+    <h2>Buy Electronic Device</h2>
+    
+    <form id="buyForm">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="brand">Select Brand:</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="model">Select Model:</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="storage">Select Storage:</label>
+            <input type="text" id="name">
+        </div>
+
+        <div class="form-group">
+            <label for="color">Select Color:</label>
+            <!-- <select id="color" required> -->
+                <!-- <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+                <option value="Silver">Silver</option>     -->        <input type="text" id="name" required>
+
+            <!-- </select> -->
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+        </div>
+
+        <button type="submit" class="buy-btn">Buy Now</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("buyForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const address = document.getElementById("address").value;
+        const brand = document.getElementById("brand").value;
+        const model = document.getElementById("model").value;
+        const storage = document.getElementById("storage").value;
+        const color = document.getElementById("color").value;
+        const quantity = document.getElementById("quantity").value;
+
+        sessionStorage.setItem("name", name);
+        sessionStorage.setItem("email", email);
+        sessionStorage.setItem("phone", phone);
+        sessionStorage.setItem("address", address);
+        sessionStorage.setItem("brand", brand);
+        sessionStorage.setItem("model", model);
+        sessionStorage.setItem("storage", storage);
+        sessionStorage.setItem("color", color);
+        sessionStorage.setItem("quantity", quantity);
+
+        window.location.href = "order-summary.html";
+    });
+</script>
+
+</body>
+</html>

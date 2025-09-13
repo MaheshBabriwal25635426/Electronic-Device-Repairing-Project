@@ -1,0 +1,300 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header and Navigation */
+.header {
+    background-color: #01030e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    height:4rem;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+align-items: center;
+}
+.name {
+    font-size: 25px;
+
+}
+img
+{
+    width: 15%;
+    height: 19%;
+    padding: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #dce37c;
+}
+
+.cta {
+    background-color: #fca311;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #4e69f0;
+
+}
+
+
+
+/* Hero Section */
+.hero {
+    /* background: url(home1.jpg); */
+    color: rgb(3, 1, 21);
+    height: 660px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(500 , end);
+    animation-duration: 2s;
+   
+
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.hero img{
+    height: 200px;
+    width: 200px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .cta {
+    background-color: #fca311;
+    color: black;
+    padding: 10px 25px;
+    font-size: 18px;
+    box-shadow: 12px 10px 10px 5px ;
+}
+.hero-content .cta:hover{
+    background-color: aqua;
+}
+
+/* Services Section */
+.services {
+    padding-left:10px;
+    padding-right: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    
+}
+
+.services h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.service-item {
+    width: 22%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 5px 4px 4px 4px rgb(1, 7, 30) ;
+}
+
+.service-item img{
+    height: 150px;
+    width: 150px;
+
+}
+
+.service-item:hover{
+    transform: scale(1.04);
+    background-color: aqua;;
+}
+
+.service-item1 {
+    width: 22%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 10px 8px 8px 5px rgb(1, 7, 30) ;
+}
+.service-item1:hover{
+    background-color: aqua;;
+    transform: scale(1.15);
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.sssp {
+    font-size: 20px;
+
+   
+}
+
+ /* Centering the box */
+ .repair-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Full screen height */
+    background-color: #94b8ed;
+    margin-bottom: 1%;
+
+}
+
+/* Styling the box */
+.gate-service {
+    background: #fff;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Apply button */
+.apply-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #333;
+    height: 40vh;
+    color: white;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+
+.why-choose-us h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-item {
+    width: 22%;
+    /* background-color: rgb(184, 160, 240);
+    padding: 20px;
+    box-shadow: 10px 8px 8px 5px rgb(1, 7, 30) ; */
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 100px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.testimonial-item {
+    margin-bottom: 20px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+}
+
+.testimonial-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 100px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.sssp {
+    font-size: 20px;
+
+   
+}
+
+
+
+
